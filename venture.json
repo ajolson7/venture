@@ -1,0 +1,68 @@
+{
+  "Rentals" : {
+    "-L8z1DVdam4MRx5BoEMP" : {
+      "Address" : "Campus Plaza Apts., 673 E 800 N, Provo, UT 84606",
+      "Availability" : "April-August",
+      "Category" : "ATV's",
+      "GeneralLocation" : "Northern Utah",
+      "Item" : "A beautiful ATV",
+      "Price" : "50"
+    },
+    "-L9187gOagBYuUI8fUsx" : {
+      "Address" : "442 S 1750 W, Springville, UT 84663",
+      "Availability" : "April-August",
+      "Category" : "Boats",
+      "GeneralLocation" : "Southern Utah",
+      "Item" : "Big Ole Boat",
+      "Price" : "300"
+    },
+    "-L918b_Dn7a2ibecIYeV" : {
+      "Address" : "180 N University Ave, Provo, UT 84604",
+      "Availability" : "April-August",
+      "Category" : "Canoes/Paddleboards",
+      "GeneralLocation" : "Northern Utah",
+      "Item" : "Just the best canoe",
+      "Price" : "20"
+    },
+    "-L91937jzcWKIDoiwOd9" : {
+      "Address" : "250 State St, Orem, UT 84058",
+      "Availability" : "Always",
+      "Category" : "RV's",
+      "GeneralLocation" : "Mid Utah",
+      "Item" : "The only RV you'll ever need",
+      "Price" : "200"
+    },
+    "-L919JZC9IZdxjqqZFfx" : {
+      "Address" : "1600 Pennsylvania Ave NW, Washington, DC 20500",
+      "Availability" : "April-August",
+      "Category" : "ATV's",
+      "GeneralLocation" : "Mid Utah",
+      "Item" : "Another beautiful ATV",
+      "Price" : "50"
+    },
+    "-L919qcisVOSi50cChnT" : {
+      "Address" : "Washington, DC 22202",
+      "Availability" : "April-August",
+      "Category" : "Boats",
+      "GeneralLocation" : "Mid Utah",
+      "Item" : "The mother of all boats",
+      "Price" : "250"
+    },
+    "-L91AMhZ3mjWWEOCwPr5" : {
+      "Address" : "13000 SD-244, Keystone, SD 57751",
+      "Availability" : "April-August",
+      "Category" : "Canoes/Paddleboards",
+      "GeneralLocation" : "Northern Utah",
+      "Item" : "The canoe that never tips",
+      "Price" : "20"
+    },
+    "-L91Cme_0PZASvblpwha" : {
+      "Address" : "New York, NY 10004",
+      "Availability" : "Always",
+      "Category" : "RV's",
+      "GeneralLocation" : "Southern Utah",
+      "Item" : "Your new house",
+      "Price" : "250"
+    }
+  }
+}

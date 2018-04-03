@@ -1,0 +1,53 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Put Item Up For Rent</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider>
+    <ion-label>Category</ion-label>
+    <ion-select [(ngModel)]="category">
+      <ion-option>ATV's</ion-option>
+      <ion-option>Boats</ion-option>
+      <ion-option>Canoes/Paddleboards</ion-option>
+      <ion-option>RV's</ion-option>
+    </ion-select>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>General Location</ion-label>
+    <ion-select [(ngModel)]="generalLocation">
+      <ion-option>Northern Utah</ion-option>
+      <ion-option>Mid Utah</ion-option>
+      <ion-option>Southern Utah</ion-option>
+    </ion-select>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Item:</ion-label>
+    <ion-input [(ngModel)]="item"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Price: $</ion-label>
+    <ion-input type="number" [(ngModel)]="price"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Address:</ion-label>
+    <ion-input [(ngModel)]="address"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Availability:</ion-label>
+    <ion-input [(ngModel)]="availability"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button (click)="addRental()">Add rental</button>
+</ion-content>

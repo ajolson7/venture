@@ -1,0 +1,22 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Items Available For Rent</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-label>ATV's</ion-label>
+  <ion-item-divider *ngFor="let rental of atvs" (click)="goToItemPage(rental)">{{rental.Item}}</ion-item-divider>
+
+  <ion-label>Boats</ion-label>
+  <ion-item-divider *ngFor="let rental of boats" (click)="goToItemPage(rental)">{{rental.Item}}</ion-item-divider>
+
+  <ion-label>Canoes/Paddleboards</ion-label>
+  <ion-item-divider *ngFor="let rental of canoesPaddleboards" (click)="goToItemPage(rental)">{{rental.Item}}</ion-item-divider>
+
+  <ion-label>RV's</ion-label>
+  <ion-item-divider *ngFor="let rental of rvs" (click)="goToItemPage(rental)">{{rental.Item}}</ion-item-divider>
+</ion-content>
