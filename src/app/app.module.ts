@@ -18,6 +18,7 @@ import { TabsPage } from "../pages/tabs/tabs";
 import { PutItemUpForRentPage } from "../pages/put-item-up-for-rent/put-item-up-for-rent";
 import { ItemsForRentPage } from "../pages/items-for-rent/items-for-rent";
 import { ItemPage } from "../pages/item/item";
+import { CategoryPage } from "../pages/category/category";
 
 //Providers in this app
 import { AngularFireDbProvider } from '../providers/angular-fire-database/angular-fire-db';
@@ -37,7 +38,8 @@ export const firebaseConfig = {
     TabsPage,
     PutItemUpForRentPage,
     ItemsForRentPage,
-    ItemPage
+    ItemPage,
+    CategoryPage
   ],
   imports: [
     BrowserModule,
@@ -54,7 +56,8 @@ export const firebaseConfig = {
     TabsPage,
     PutItemUpForRentPage,
     ItemsForRentPage,
-    ItemPage
+    ItemPage,
+    CategoryPage
   ],
   providers: [
     StatusBar,

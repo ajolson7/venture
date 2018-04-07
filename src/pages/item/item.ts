@@ -19,7 +19,6 @@ export class ItemPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.rental = navParams.data;
-    console.log("this.rental: ", this.rental);
   }
 
 }

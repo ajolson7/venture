@@ -1,3 +1,43 @@
 page-items-for-rent {
 
 }
+
+.atvRow {
+  background-image: url("../../assets/imgs/atv.png");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.boatRow {
+  background-image: url("../../assets/imgs/boat.png");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.canoePaddleboardRow {
+  background-image: url("../../assets/imgs/canoe.png");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.rvRow {
+  background-image: url("../../assets/imgs/rv.png");
+  height: 200px;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.hidden-button {
+  height: 100%;
+}

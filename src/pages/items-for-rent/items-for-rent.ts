@@ -1,14 +1,15 @@
 //Angular and Ionic stuff
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import {Observable} from "rxjs/Observable";
+import { Observable } from "rxjs/Observable";
 
 //Angular Fire stuff
-import {AngularFireList} from "angularfire2/database";
-import {AngularFireDbProvider} from "../../providers/angular-fire-database/angular-fire-db";
+import { AngularFireList } from "angularfire2/database";
+import { AngularFireDbProvider } from "../../providers/angular-fire-database/angular-fire-db";
 
 //Pages in this app
 import { ItemPage } from "../item/item";
+import { CategoryPage } from "../category/category";
 
 @IonicPage()
 @Component({
@@ -65,6 +66,26 @@ export class ItemsForRentPage {
         }
       }
     });
+  }
+
+  goToGroupPage(category: string) {
+    switch (category) {
+      case this.atvString:
+        this.navCtrl.push(CategoryPage, this.atvs);
+        break;
+
+      case this.boatString:
+        this.navCtrl.push(CategoryPage, this.boats);
+        break;
+
+      case this.canoesPaddleboardString:
+        this.navCtrl.push(CategoryPage, this.canoesPaddleboards);
+        break;
+
+      case this.rvString:
+        this.navCtrl.push(CategoryPage, this.rvs);
+        break;
+    }
   }
 
   goToItemPage(rental: any) {
