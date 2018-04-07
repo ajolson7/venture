@@ -1,0 +1,12 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>{{category}}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider *ngFor="let rental of rentals" (click)="goToItemPage(rental)">{{rental.Item}}</ion-item-divider>
+</ion-content>
