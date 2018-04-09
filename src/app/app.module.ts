@@ -20,6 +20,7 @@ import { ItemsForRentPage } from "../pages/items-for-rent/items-for-rent";
 import { ItemPage } from "../pages/item/item";
 import { CategoryPage } from "../pages/category/category";
 import { LoginSignupPage } from "../pages/loginSignup/loginSignup";
+import { HomePage } from "../pages/home/home";
 
 //Providers in this app
 import { AngularFireDbProvider } from '../providers/angular-fire-database/angular-fire-db';
@@ -42,7 +43,8 @@ export const firebaseConfig = {
     ItemsForRentPage,
     ItemPage,
     CategoryPage,
-    LoginSignupPage
+    LoginSignupPage,
+    HomePage
   ],
   imports: [
     BrowserModule,
@@ -61,7 +63,8 @@ export const firebaseConfig = {
     ItemsForRentPage,
     ItemPage,
     CategoryPage,
-    LoginSignupPage
+    LoginSignupPage,
+    HomePage
   ],
   providers: [
     StatusBar,
