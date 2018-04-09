@@ -19,9 +19,11 @@ import { PutItemUpForRentPage } from "../pages/put-item-up-for-rent/put-item-up-
 import { ItemsForRentPage } from "../pages/items-for-rent/items-for-rent";
 import { ItemPage } from "../pages/item/item";
 import { CategoryPage } from "../pages/category/category";
+import { LoginSignupPage } from "../pages/loginSignup/loginSignup";
 
 //Providers in this app
 import { AngularFireDbProvider } from '../providers/angular-fire-database/angular-fire-db';
+import { AuthProvider } from '../providers/auth/auth';
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCPx0Q9T8Vtf70nvT5_-KGvtj0WDO7Oniw",
@@ -39,7 +41,8 @@ export const firebaseConfig = {
     PutItemUpForRentPage,
     ItemsForRentPage,
     ItemPage,
-    CategoryPage
+    CategoryPage,
+    LoginSignupPage
   ],
   imports: [
     BrowserModule,
@@ -57,13 +60,15 @@ export const firebaseConfig = {
     PutItemUpForRentPage,
     ItemsForRentPage,
     ItemPage,
-    CategoryPage
+    CategoryPage,
+    LoginSignupPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    AngularFireDbProvider
+    AngularFireDbProvider,
+    AuthProvider
   ]
 })
 export class AppModule {}
