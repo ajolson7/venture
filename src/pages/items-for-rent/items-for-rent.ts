@@ -87,10 +87,4 @@ export class ItemsForRentPage {
         break;
     }
   }
-
-  goToItemPage(rental: any) {
-    //this.navCtrl.setRoot(ItemPage, rental);
-    this.navCtrl.push(ItemPage, rental);
-  }
-
 }

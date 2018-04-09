@@ -1,0 +1,29 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Log In or Sign Up</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider>
+    <ion-label>Email:</ion-label>
+    <ion-input type="text" [(ngModel)]="user.email"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Password:</ion-label>
+    <ion-input type="password" [(ngModel)]="user.password"></ion-input>
+  </ion-item-divider>
+
+  <br>
+  <button ion-button (click)="login(user)">Log in</button>
+  <button ion-button (click)="signup(user)">Sign up</button>
+
+  <br>
+  <br>
+
+  <p *ngIf="!success">{{errMsg}}</p>
+</ion-content>

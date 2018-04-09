@@ -49,5 +49,6 @@
 
   <br>
 
-  <button ion-button (click)="addRental()">Add rental</button>
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="addRental()">Add rental</button>
+  <button ion-button *ngIf="!auth.getCurrentUser()" (click)="addRental()">Please log in or sign up to add an item</button>
 </ion-content>

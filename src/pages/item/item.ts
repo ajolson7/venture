@@ -1,12 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the ItemPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
+import { AuthProvider } from "../../providers/auth/auth";
+import { LoginSignupPage } from "../loginSignup/loginSignup";
 
 @IonicPage()
 @Component({
@@ -17,8 +12,16 @@ export class ItemPage {
 
   rental: any;
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams, private auth: AuthProvider) {
     this.rental = navParams.data;
   }
 
+  rentItem() {
+    if (this.auth.getCurrentUser()) {
+      console.log('logged in');
+      this.auth.logout();
+    } else {
+      this.navCtrl.push(LoginSignupPage);
+    }
+  }
 }
