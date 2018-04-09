@@ -1,4 +1,5 @@
-<ion-tabs>
-  <ion-tab [root]="putItemUpForRent" tabTitle="Put Item Up For Rent" tabIcon="cash"></ion-tab>
-  <ion-tab [root]="itemsForRent" tabTitle="Items Available For Rent" tabIcon="list"></ion-tab>
+<ion-tabs [selectedIndex]="1" color="secondary">
+  <ion-tab [root]="putItemUpForRent" tabTitle="Rent Out Item" tabIcon="cash"></ion-tab>
+  <ion-tab [root]="homePage" tabTitle="Home" tabIcon="home"></ion-tab>
+  <ion-tab [root]="itemsForRent" tabTitle="Items For Rent" tabIcon="list"></ion-tab>
 </ion-tabs>
