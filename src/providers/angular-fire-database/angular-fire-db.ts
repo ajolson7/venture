@@ -10,7 +10,7 @@ export class AngularFireDbProvider {
 
   }
 
-  addRental(item: string, price: number, generalLocation: string, address: string, category: string, availability: string) {
+  addRental(item: string, price: number, generalLocation: string, address: string, category: string, availability: string, email: string) {
     //this.http.put('https://camping-rental.firebaseio.com/', this.test);
     this.db.database.ref('Rentals/').push({
       Item: item,
@@ -18,7 +18,8 @@ export class AngularFireDbProvider {
       GeneralLocation: generalLocation,
       Address: address,
       Category: category,
-      Availability: availability
+      Availability: availability,
+      Email: email
     })
   }
 

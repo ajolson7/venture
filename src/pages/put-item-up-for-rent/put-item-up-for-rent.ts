@@ -17,6 +17,7 @@ export class PutItemUpForRentPage {
   category: string;
   availability: string;
   price: number;
+  email: string;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private angularFireDbProvider: AngularFireDbProvider, private auth: AuthProvider) {
   }
@@ -24,7 +25,7 @@ export class PutItemUpForRentPage {
   addRental() {
     if (this.auth.getCurrentUser()) {
       console.log('logged in');
-      this.angularFireDbProvider.addRental(this.item, this.price, this.generalLocation, this.address, this.category, this.availability);
+      this.angularFireDbProvider.addRental(this.item, this.price, this.generalLocation, this.address, this.category, this.availability, this.email);
     } else {
       console.log('not logged in');
       this.navCtrl.push(LoginSignupPage);
