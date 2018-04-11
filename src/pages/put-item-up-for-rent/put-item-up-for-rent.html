@@ -8,6 +8,11 @@
 
 
 <ion-content padding>
+
+  <p>15% of the rental charge will go to Venture.
+    When putting up an item for rent, a button to choose a picture to upload will appear in the top left corner of your screen.
+  </p>
+
   <ion-item-divider>
     <ion-label>Category</ion-label>
     <ion-select [(ngModel)]="category">
@@ -38,6 +43,11 @@
   </ion-item-divider>
 
   <ion-item-divider>
+    <ion-label>Deposit:</ion-label>
+    <ion-input [(ngModel)]="deposit"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
     <ion-label>Address:</ion-label>
     <ion-input [(ngModel)]="address"></ion-input>
   </ion-item-divider>
@@ -45,6 +55,16 @@
   <ion-item-divider>
     <ion-label>Availability:</ion-label>
     <ion-input [(ngModel)]="availability"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Your Email:</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Description:</ion-label>
+    <ion-input [(ngModel)]="description"></ion-input>
   </ion-item-divider>
 
   <br>

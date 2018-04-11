@@ -12,6 +12,11 @@ import { AngularFireAuthModule } from "angularfire2/auth";
 import { AngularFireModule } from "angularfire2";
 import { AngularFireDatabaseModule } from "angularfire2/database";
 
+//Providers in this app
+import { AngularFireDbProvider } from '../providers/angular-fire-database/angular-fire-db';
+import { AuthProvider } from '../providers/auth/auth';
+import { Camera } from "@ionic-native/camera";
+
 //MyApp and all pages in this app
 import { MyApp } from './app.component';
 import { TabsPage } from "../pages/tabs/tabs";
@@ -21,10 +26,7 @@ import { ItemPage } from "../pages/item/item";
 import { CategoryPage } from "../pages/category/category";
 import { LoginSignupPage } from "../pages/loginSignup/loginSignup";
 import { HomePage } from "../pages/home/home";
-
-//Providers in this app
-import { AngularFireDbProvider } from '../providers/angular-fire-database/angular-fire-db';
-import { AuthProvider } from '../providers/auth/auth';
+import { CheckoutPage } from "../pages/checkout/checkout";
 
 export const firebaseConfig = {
   apiKey: "AIzaSyCPx0Q9T8Vtf70nvT5_-KGvtj0WDO7Oniw",
@@ -44,7 +46,8 @@ export const firebaseConfig = {
     ItemPage,
     CategoryPage,
     LoginSignupPage,
-    HomePage
+    HomePage,
+    CheckoutPage
   ],
   imports: [
     BrowserModule,
@@ -64,14 +67,16 @@ export const firebaseConfig = {
     ItemPage,
     CategoryPage,
     LoginSignupPage,
-    HomePage
+    HomePage,
+    CheckoutPage
   ],
   providers: [
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     AngularFireDbProvider,
-    AuthProvider
+    AuthProvider,
+    Camera
   ]
 })
 export class AppModule {}

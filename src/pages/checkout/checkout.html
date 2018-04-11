@@ -1,0 +1,34 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>checkout</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item-divider>
+    <ion-label>Duration (days):</ion-label>
+    <ion-input [(ngModel)]="duration"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Card Info:</ion-label>
+    <ion-input [(ngModel)]="cardInfo"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="!showCheckoutMsg" (click)="checkout()">Checkout</button>
+  <button ion-button *ngIf="showCheckoutMsg" (click)="goToItemsForRentPage()">Return to Items For Rent Page</button>
+
+  <p *ngIf="showCheckoutMsg">
+    An email has been sent to the owner of this item with your email indicating that you want to rent this item.
+
+    <br>
+    <br>
+
+    An email has also been sent to you with the email of the owner so you can communicate with him/her.
+  </p>
+</ion-content>

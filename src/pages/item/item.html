@@ -8,30 +8,23 @@
 
 
 <ion-content padding>
+  <ion-label>Description</ion-label>
+  <ion-item-divider>{{rental.Description}}</ion-item-divider>
   <ion-label>General Location</ion-label>
   <ion-item-divider>{{rental.GeneralLocation}}</ion-item-divider>
   <ion-label>Price</ion-label>
   <ion-item-divider>${{rental.Price}}</ion-item-divider>
+  <ion-label>Deposit</ion-label>
+  <ion-item-divider>${{rental.Deposit}}</ion-item-divider>
   <ion-label>Availability</ion-label>
   <ion-item-divider>{{rental.Availability}}</ion-item-divider>
   <ion-label>Address</ion-label>
   <ion-item-divider>{{rental.Address}}</ion-item-divider>
-  <ion-label>Email of Owner</ion-label>
-  <ion-item-divider>{{rental.Email}}</ion-item-divider>
+  <ion-label>Picture of Item</ion-label>
+  <img src="{{rental.Picture}}">
 
   <br>
   <button ion-button *ngIf="auth.getCurrentUser()" (click)="rentItem()">Rent item</button>
   <button ion-button *ngIf="!auth.getCurrentUser()" (click)="rentItem()">Please log in or sign up to rent this item</button>
-
-  <!--<br>
-
-  <p *ngIf="rentItemClicked">
-    An email has been sent to the owner of this item with your email address indicating that you would like to rent this item.
-
-    <br>
-    <br>
-
-    An email has also been sent to you with the email of the owner so you can communicate with him/her directly.
-  </p>-->
 
 </ion-content>

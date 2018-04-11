@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { AuthProvider } from "../../providers/auth/auth";
 import { LoginSignupPage } from "../loginSignup/loginSignup";
+import { CheckoutPage } from "../checkout/checkout";
 
 @IonicPage()
 @Component({
@@ -21,12 +22,14 @@ export class ItemPage {
   rentItem() {
     if (this.auth.getCurrentUser()) {
       console.log('logged in');
-      this.auth.logout();
+      //this.auth.logout();
 
       /*this.rentItemClicked = true;
 
       console.log("this.auth.getCurrentUser().email: ", this.auth.getCurrentUser().email);
       this.auth.getCurrentUser().sendEmailVerification();*/
+
+      this.navCtrl.push(CheckoutPage);
     } else {
       this.navCtrl.push(LoginSignupPage);
     }
