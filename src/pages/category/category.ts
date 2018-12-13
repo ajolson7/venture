@@ -14,7 +14,9 @@ export class CategoryPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.rentals = navParams.data;
-    this.category = this.rentals[0].Category;
+    // this.category = this.rentals[0].Category;
+    console.log('this.rentals: ', this.rentals);
+    this.category = this.rentals[0].category;
   }
 
   goToItemPage(rental: any) {

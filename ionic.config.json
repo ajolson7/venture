@@ -1,8 +1,17 @@
 {
   "name": "venture",
-  "app_id": "",
-  "type": "ionic-angular",
   "integrations": {
     "cordova": {}
-  }
+  },
+  "type": "ionic-angular",
+  "proxies": [
+    {
+      "path": "/user",
+      "proxyUrl": "http://cors.api.com/api"
+    },
+    {
+      "path": "/rental",
+      "proxyUrl": "http://cors.api.com/api"
+    }
+  ]
 }

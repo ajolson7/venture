@@ -1,7 +1,8 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>{{rental.Item}}</ion-title>
+    <!--<ion-title>{{rental.Item}}</ion-title>-->
+    <ion-title>{{rental.item}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -9,19 +10,26 @@
 
 <ion-content padding>
   <ion-label>Description</ion-label>
-  <ion-item-divider>{{rental.Description}}</ion-item-divider>
+  <!--<ion-item-divider>{{rental.Description}}</ion-item-divider>-->
+  <ion-item-divider>{{rental.description}}</ion-item-divider>
   <ion-label>General Location</ion-label>
-  <ion-item-divider>{{rental.GeneralLocation}}</ion-item-divider>
+  <!--<ion-item-divider>{{rental.GeneralLocation}}</ion-item-divider>-->
+  <ion-item-divider>{{rental.general_location}}</ion-item-divider>
   <ion-label>Price</ion-label>
-  <ion-item-divider>${{rental.Price}}</ion-item-divider>
+  <!--<ion-item-divider>${{rental.Price}}</ion-item-divider>-->
+  <ion-item-divider>${{rental.price}}</ion-item-divider>
   <ion-label>Deposit</ion-label>
-  <ion-item-divider>${{rental.Deposit}}</ion-item-divider>
+  <!--<ion-item-divider>${{rental.Deposit}}</ion-item-divider>-->
+  <ion-item-divider>${{rental.deposit}}</ion-item-divider>
   <ion-label>Availability</ion-label>
-  <ion-item-divider>{{rental.Availability}}</ion-item-divider>
+  <!--<ion-item-divider>{{rental.Availability}}</ion-item-divider>-->
+  <ion-item-divider>{{rental.availability}}</ion-item-divider>
   <ion-label>Address</ion-label>
-  <ion-item-divider>{{rental.Address}}</ion-item-divider>
+  <!--<ion-item-divider>{{rental.Address}}</ion-item-divider>-->
+  <ion-item-divider>{{rental.address}}</ion-item-divider>
   <ion-label>Picture of Item</ion-label>
-  <img src="{{rental.Picture}}">
+  <!--<img src="{{rental.Picture}}">-->
+  <img src={{rental.picture}}>
 
   <br>
   <button ion-button *ngIf="auth.getCurrentUser()" (click)="rentItem()">Rent item</button>

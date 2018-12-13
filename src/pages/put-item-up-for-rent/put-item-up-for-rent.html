@@ -71,4 +71,188 @@
 
   <button ion-button *ngIf="auth.getCurrentUser()" (click)="addRental()">Add rental</button>
   <button ion-button *ngIf="!auth.getCurrentUser()" (click)="addRental()">Please log in or sign up to add an item</button>
+
+  <br>
+  <br>
+
+  <ion-item-divider>
+    <ion-label>Username:</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Password:</ion-label>
+    <ion-input [(ngModel)]="password"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>First Name:</ion-label>
+    <ion-input [(ngModel)]="name_first"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Middle Name:</ion-label>
+    <ion-input [(ngModel)]="name_middle"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Last Name:</ion-label>
+    <ion-input [(ngModel)]="name_last"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Your Email:</ion-label>
+    <ion-input [(ngModel)]="email2"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Phone:</ion-label>
+    <ion-input [(ngModel)]="phone"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="addUser()">Create User</button>
+
+  <br>
+  <br>
+
+  <ion-item-divider>
+    <ion-label>ID of the rental you want to delete:</ion-label>
+    <ion-input [(ngModel)]="rentalToDelete"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="deleteRental()">Delete Rental</button>
+
+  <br>
+  <br>
+
+  <ion-item-divider>
+    <ion-label>ID of the user you want to delete:</ion-label>
+    <ion-input [(ngModel)]="userToDelete"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="deleteUser()">Delete User</button>
+
+  <br>
+  <br>
+
+  <ion-item-divider>
+    <ion-label>ID of rental you want to update:</ion-label>
+    <ion-input [(ngModel)]="rentalID"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>ID of owner of rental you want to update:</ion-label>
+    <ion-input [(ngModel)]="ownerID"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Category</ion-label>
+    <ion-select [(ngModel)]="category">
+      <ion-option>ATV's</ion-option>
+      <ion-option>Boats</ion-option>
+      <ion-option>Canoes/Paddleboards</ion-option>
+      <ion-option>RV's</ion-option>
+    </ion-select>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>General Location</ion-label>
+    <ion-select [(ngModel)]="generalLocation">
+      <ion-option>Northern Utah</ion-option>
+      <ion-option>Mid Utah</ion-option>
+      <ion-option>Southern Utah</ion-option>
+    </ion-select>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Item:</ion-label>
+    <ion-input [(ngModel)]="item"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Price: $</ion-label>
+    <ion-input type="number" [(ngModel)]="price"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Deposit:</ion-label>
+    <ion-input [(ngModel)]="deposit"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Address:</ion-label>
+    <ion-input [(ngModel)]="address"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Availability:</ion-label>
+    <ion-input [(ngModel)]="availability"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Your Email:</ion-label>
+    <ion-input [(ngModel)]="email"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Description:</ion-label>
+    <ion-input [(ngModel)]="description"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="updateRental()">Update Rental</button>
+
+  <br>
+  <br>
+
+  <ion-item-divider>
+    <ion-label>ID of user you want to update:</ion-label>
+    <ion-input [(ngModel)]="userID"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Username:</ion-label>
+    <ion-input [(ngModel)]="username"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Password:</ion-label>
+    <ion-input [(ngModel)]="password"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>First Name:</ion-label>
+    <ion-input [(ngModel)]="name_first"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Middle Name:</ion-label>
+    <ion-input [(ngModel)]="name_middle"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Last Name:</ion-label>
+    <ion-input [(ngModel)]="name_last"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Your Email:</ion-label>
+    <ion-input [(ngModel)]="email2"></ion-input>
+  </ion-item-divider>
+
+  <ion-item-divider>
+    <ion-label>Phone:</ion-label>
+    <ion-input [(ngModel)]="phone"></ion-input>
+  </ion-item-divider>
+
+  <br>
+
+  <button ion-button *ngIf="auth.getCurrentUser()" (click)="updateUser()">Update User</button>
 </ion-content>

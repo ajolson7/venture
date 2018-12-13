@@ -9,12 +9,15 @@
 
 <ion-content padding>
   <ion-item-divider *ngFor="let rental of rentals" (click)="goToItemPage(rental)">
-    {{rental.Item}}
-    <span class="right"><img src="{{rental.Picture}}" height="60px" width="100px"></span>
+    <!--{{rental.Item}}-->
+    {{rental.item}}
+    <!--<span class="right"><img src="{{rental.Picture}}" height="60px" width="100px"></span>-->
+    <span class="right"><img src={{rental.picture}} height="60px" width="100px"></span>
 
     <br>
     <br>
 
-    ${{rental.Price}}
+    <!--${{rental.Price}}-->
+    ${{rental.price}}
   </ion-item-divider>
 </ion-content>
