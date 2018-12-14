@@ -36,6 +36,13 @@ export class AngularFireDbProvider {
     })
   }
 
+  removeRental(key) {
+    console.log('key: ', key);
+    let rentalDbString = 'Rentals/' + key;
+    console.log(rentalDbString);
+    this.db.database.ref(rentalDbString).remove().then(() => {console.log('remove succeeded')}).catch(() => {console.log('remove failed')});
+  }
+
   getRentals() {
     return this.db.list('Rentals');
   }

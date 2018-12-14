@@ -26,5 +26,6 @@
   <br>
   <button ion-button *ngIf="auth.getCurrentUser()" (click)="rentItem()">Rent item</button>
   <button ion-button *ngIf="!auth.getCurrentUser()" (click)="rentItem()">Please log in or sign up to rent this item</button>
+  <button ion-button (click)="deleteItem()">Delete item</button>
 
 </ion-content>
